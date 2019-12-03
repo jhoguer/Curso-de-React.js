@@ -19,6 +19,8 @@ class BadgesList extends React.Component {
       );
     }
 
+    console.log(this.props.badges.avatarUrl)
+
     return (
       <div className="BadgesList">
         <ul className="list-unstyled">
@@ -32,11 +34,11 @@ class BadgesList extends React.Component {
                   <p>{badge.firstName} {badge.lastName}</p>
                   <p>{badge.twitter} </p>
                   <p>{badge.jobTitle} </p>
-                </div>
-                
+                </div>                
               </li>
             )
-          })}
+          })
+          }
         </ul>
       </div>
       

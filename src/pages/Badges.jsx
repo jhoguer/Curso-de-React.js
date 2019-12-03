@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import confLogo from '../images/badge-header.svg';
-import BadgesList from '../components/BadgesList.jsx';
+import BadgesList from '../components/BadgesList';
 import PageLoading from '../components/PageLoading';
 import PageError from '../components/PageError';
 import api from '../api';
@@ -20,7 +20,7 @@ class Badges extends React.Component {
     this.fetchData();
   }
 
-  async fetchData() {
+  fetchData = async () => {
     this.setState({
       loading: true,
       error: null
