@@ -28,7 +28,7 @@ const api = {
       return callApi('/badges');
     },
     create(badge) {
-      console.log(badge);
+      // throw new Error('500: servrt error')
       return callApi(`/badges`, {
         method: 'POST',
         body: JSON.stringify(badge),
